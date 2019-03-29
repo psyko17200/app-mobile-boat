@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4638528C224B5715007C5037 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4638528B224B5715007C5037 /* Annotation.m */; };
+		3E8CEEF5224C2FC800CD3D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CEEF4224C2FC700CD3D1B /* Assets.xcassets */; };
+		3E8CEEF7224C994700CD3D1B /* return-back-redo-arrow-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CEEF6224C994600CD3D1B /* return-back-redo-arrow-512.png */; };
+		3E8CEEF9224C995900CD3D1B /* boat-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8CEEF8224C995800CD3D1B /* boat-icon.png */; };
 		4638528F224B572C007C5037 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4638528E224B572C007C5037 /* MapKit.framework */; };
-		46385293224B6B31007C5037 /* boat.png in Resources */ = {isa = PBXBuildFile; fileRef = 46385292224B6B31007C5037 /* boat.png */; };
 		CD2984152248B77D0017D748 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2984142248B77D0017D748 /* AppDelegate.m */; };
 		CD2984182248B77D0017D748 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2984172248B77D0017D748 /* ViewController.m */; };
 		CD29841B2248B77D0017D748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2984192248B77D0017D748 /* Main.storyboard */; };
-		CD29841D2248B7820017D748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD29841C2248B7820017D748 /* Assets.xcassets */; };
 		CD2984202248B7820017D748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD29841E2248B7820017D748 /* LaunchScreen.storyboard */; };
 		CD2984232248B7820017D748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2984222248B7820017D748 /* main.m */; };
 		CD29842D2248B7820017D748 /* projectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD29842C2248B7820017D748 /* projectTests.m */; };
@@ -38,19 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4638528A224B5714007C5037 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
-		4638528B224B5715007C5037 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		3E8CEEEB224BD63900CD3D1B /* projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8CEEEC224BD63900CD3D1B /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8CEEF4224C2FC700CD3D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E8CEEF6224C994600CD3D1B /* return-back-redo-arrow-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "return-back-redo-arrow-512.png"; path = "../../../../../Volumes/ESD-ISO/Dev Mobile/vue1/project/Assets.xcassets/return-back-redo-arrow-512.imageset/return-back-redo-arrow-512.png"; sourceTree = "<group>"; };
+		3E8CEEF8224C995800CD3D1B /* boat-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "boat-icon.png"; path = "../../../../../Volumes/ESD-ISO/Dev Mobile/vue1/project/Assets.xcassets/boat-icon.imageset/boat-icon.png"; sourceTree = "<group>"; };
 		4638528E224B572C007C5037 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		46385292224B6B31007C5037 /* boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boat.png; sourceTree = "<group>"; };
 		46B06E9F224A64B700BD23A2 /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46B06EA0224A64B700BD23A2 /* projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = projectTests.xctest; path = "/Users/cguill04/Desktop/project/build/Debug-iphoneos/projectTests.xctest"; sourceTree = "<absolute>"; };
-		46B06EA1224A64B700BD23A2 /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = projectUITests.xctest; path = "/Users/cguill04/Desktop/project/build/Debug-iphoneos/projectUITests.xctest"; sourceTree = "<absolute>"; };
 		CD2984132248B77D0017D748 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD2984142248B77D0017D748 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD2984162248B77D0017D748 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD2984172248B77D0017D748 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CD29841A2248B77D0017D748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD29841C2248B7820017D748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD29841F2248B7820017D748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD2984212248B7820017D748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2984222248B7820017D748 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +101,8 @@
 				CD2984362248B7830017D748 /* projectUITests */,
 				46B06E9F224A64B700BD23A2 /* project.app */,
 				4638528D224B572C007C5037 /* Frameworks */,
+				3E8CEEEB224BD63900CD3D1B /* projectTests.xctest */,
+				3E8CEEEC224BD63900CD3D1B /* projectUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,13 +111,12 @@
 			children = (
 				CD2984132248B77D0017D748 /* AppDelegate.h */,
 				CD2984142248B77D0017D748 /* AppDelegate.m */,
-				4638528A224B5714007C5037 /* Annotation.h */,
-				4638528B224B5715007C5037 /* Annotation.m */,
 				CD2984162248B77D0017D748 /* ViewController.h */,
 				CD2984172248B77D0017D748 /* ViewController.m */,
 				CD2984192248B77D0017D748 /* Main.storyboard */,
-				CD29841C2248B7820017D748 /* Assets.xcassets */,
-				46385292224B6B31007C5037 /* boat.png */,
+				3E8CEEF4224C2FC700CD3D1B /* Assets.xcassets */,
+				3E8CEEF8224C995800CD3D1B /* boat-icon.png */,
+				3E8CEEF6224C994600CD3D1B /* return-back-redo-arrow-512.png */,
 				CD29841E2248B7820017D748 /* LaunchScreen.storyboard */,
 				CD2984212248B7820017D748 /* Info.plist */,
 				CD2984222248B7820017D748 /* main.m */,
@@ -178,7 +178,7 @@
 			);
 			name = projectTests;
 			productName = projectTests;
-			productReference = 46B06EA0224A64B700BD23A2 /* projectTests.xctest */;
+			productReference = 3E8CEEEB224BD63900CD3D1B /* projectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CD2984322248B7820017D748 /* projectUITests */ = {
@@ -196,7 +196,7 @@
 			);
 			name = projectUITests;
 			productName = projectUITests;
-			productReference = 46B06EA1224A64B700BD23A2 /* projectUITests.xctest */;
+			productReference = 3E8CEEEC224BD63900CD3D1B /* projectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -247,9 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2984202248B7820017D748 /* LaunchScreen.storyboard in Resources */,
-				46385293224B6B31007C5037 /* boat.png in Resources */,
-				CD29841D2248B7820017D748 /* Assets.xcassets in Resources */,
+				3E8CEEF5224C2FC800CD3D1B /* Assets.xcassets in Resources */,
 				CD29841B2248B77D0017D748 /* Main.storyboard in Resources */,
+				3E8CEEF9224C995900CD3D1B /* boat-icon.png in Resources */,
+				3E8CEEF7224C994700CD3D1B /* return-back-redo-arrow-512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4638528C224B5715007C5037 /* Annotation.m in Sources */,
 				CD2984182248B77D0017D748 /* ViewController.m in Sources */,
 				CD2984232248B7820017D748 /* main.m in Sources */,
 				CD2984152248B77D0017D748 /* AppDelegate.m in Sources */,
