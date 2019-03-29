@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		236DB711C505FA53F26D443F /* Pods_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CE0901D8DFD2F66080CE38 /* Pods_projectTests.framework */; };
+		4638528C224B5715007C5037 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4638528B224B5715007C5037 /* Annotation.m */; };
+		4638528F224B572C007C5037 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4638528E224B572C007C5037 /* MapKit.framework */; };
+		46385293224B6B31007C5037 /* boat.png in Resources */ = {isa = PBXBuildFile; fileRef = 46385292224B6B31007C5037 /* boat.png */; };
 		CD2984152248B77D0017D748 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2984142248B77D0017D748 /* AppDelegate.m */; };
 		CD2984182248B77D0017D748 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2984172248B77D0017D748 /* ViewController.m */; };
 		CD29841B2248B77D0017D748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2984192248B77D0017D748 /* Main.storyboard */; };
@@ -36,10 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		569DE708332B45848E686CF8 /* Pods-projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectTests/Pods-projectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D04C7463A067E7FD879C4E3 /* Pods-projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectTests/Pods-projectTests.release.xcconfig"; sourceTree = "<group>"; };
-		C2CE0901D8DFD2F66080CE38 /* Pods_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD2984102248B77D0017D748 /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4638528A224B5714007C5037 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		4638528B224B5715007C5037 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		4638528E224B572C007C5037 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46385292224B6B31007C5037 /* boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boat.png; sourceTree = "<group>"; };
+		46B06E9F224A64B700BD23A2 /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B06EA0224A64B700BD23A2 /* projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = projectTests.xctest; path = "/Users/cguill04/Desktop/project/build/Debug-iphoneos/projectTests.xctest"; sourceTree = "<absolute>"; };
+		46B06EA1224A64B700BD23A2 /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = projectUITests.xctest; path = "/Users/cguill04/Desktop/project/build/Debug-iphoneos/projectUITests.xctest"; sourceTree = "<absolute>"; };
 		CD2984132248B77D0017D748 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD2984142248B77D0017D748 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD2984162248B77D0017D748 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -49,10 +54,8 @@
 		CD29841F2248B7820017D748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD2984212248B7820017D748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2984222248B7820017D748 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CD2984282248B7820017D748 /* projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD29842C2248B7820017D748 /* projectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = projectTests.m; sourceTree = "<group>"; };
 		CD29842E2248B7820017D748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD2984332248B7820017D748 /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2984372248B7830017D748 /* projectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = projectUITests.m; sourceTree = "<group>"; };
 		CD2984392248B7830017D748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4638528F224B572C007C5037 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236DB711C505FA53F26D443F /* Pods_projectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,21 +86,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C54F5D78157EA94C684F2EA /* Frameworks */ = {
+		4638528D224B572C007C5037 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2CE0901D8DFD2F66080CE38 /* Pods_projectTests.framework */,
+				4638528E224B572C007C5037 /* MapKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7EDC44C5A56C949140E2DAFC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				569DE708332B45848E686CF8 /* Pods-projectTests.debug.xcconfig */,
-				9D04C7463A067E7FD879C4E3 /* Pods-projectTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CD2984072248B77D0017D748 = {
@@ -106,20 +100,9 @@
 				CD2984122248B77D0017D748 /* project */,
 				CD29842B2248B7820017D748 /* projectTests */,
 				CD2984362248B7830017D748 /* projectUITests */,
-				CD2984112248B77D0017D748 /* Products */,
-				7EDC44C5A56C949140E2DAFC /* Pods */,
-				1C54F5D78157EA94C684F2EA /* Frameworks */,
+				46B06E9F224A64B700BD23A2 /* project.app */,
+				4638528D224B572C007C5037 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		CD2984112248B77D0017D748 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CD2984102248B77D0017D748 /* project.app */,
-				CD2984282248B7820017D748 /* projectTests.xctest */,
-				CD2984332248B7820017D748 /* projectUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CD2984122248B77D0017D748 /* project */ = {
@@ -127,10 +110,13 @@
 			children = (
 				CD2984132248B77D0017D748 /* AppDelegate.h */,
 				CD2984142248B77D0017D748 /* AppDelegate.m */,
+				4638528A224B5714007C5037 /* Annotation.h */,
+				4638528B224B5715007C5037 /* Annotation.m */,
 				CD2984162248B77D0017D748 /* ViewController.h */,
 				CD2984172248B77D0017D748 /* ViewController.m */,
 				CD2984192248B77D0017D748 /* Main.storyboard */,
 				CD29841C2248B7820017D748 /* Assets.xcassets */,
+				46385292224B6B31007C5037 /* boat.png */,
 				CD29841E2248B7820017D748 /* LaunchScreen.storyboard */,
 				CD2984212248B7820017D748 /* Info.plist */,
 				CD2984222248B7820017D748 /* main.m */,
@@ -173,7 +159,7 @@
 			);
 			name = project;
 			productName = project;
-			productReference = CD2984102248B77D0017D748 /* project.app */;
+			productReference = 46B06E9F224A64B700BD23A2 /* project.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CD2984272248B7820017D748 /* projectTests */ = {
@@ -192,7 +178,7 @@
 			);
 			name = projectTests;
 			productName = projectTests;
-			productReference = CD2984282248B7820017D748 /* projectTests.xctest */;
+			productReference = 46B06EA0224A64B700BD23A2 /* projectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CD2984322248B7820017D748 /* projectUITests */ = {
@@ -210,7 +196,7 @@
 			);
 			name = projectUITests;
 			productName = projectUITests;
-			productReference = CD2984332248B7820017D748 /* projectUITests.xctest */;
+			productReference = 46B06EA1224A64B700BD23A2 /* projectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +230,7 @@
 				Base,
 			);
 			mainGroup = CD2984072248B77D0017D748;
-			productRefGroup = CD2984112248B77D0017D748 /* Products */;
+			productRefGroup = CD2984072248B77D0017D748;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -261,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2984202248B7820017D748 /* LaunchScreen.storyboard in Resources */,
+				46385293224B6B31007C5037 /* boat.png in Resources */,
 				CD29841D2248B7820017D748 /* Assets.xcassets in Resources */,
 				CD29841B2248B77D0017D748 /* Main.storyboard in Resources */,
 			);
@@ -308,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4638528C224B5715007C5037 /* Annotation.m in Sources */,
 				CD2984182248B77D0017D748 /* ViewController.m in Sources */,
 				CD2984232248B7820017D748 /* main.m in Sources */,
 				CD2984152248B77D0017D748 /* AppDelegate.m in Sources */,
@@ -509,7 +497,6 @@
 		};
 		CD2984402248B7830017D748 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 569DE708332B45848E686CF8 /* Pods-projectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -528,7 +515,6 @@
 		};
 		CD2984412248B7830017D748 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D04C7463A067E7FD879C4E3 /* Pods-projectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
