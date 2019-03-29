@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		463852A2224B7792007C5037 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 463852A1224B7792007C5037 /* AppDelegate.m */; };
+		463852A5224B7792007C5037 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463852A4224B7792007C5037 /* ViewController.m */; };
+		463852A8224B7792007C5037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463852A6224B7792007C5037 /* Main.storyboard */; };
+		463852AA224B779D007C5037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463852A9224B779D007C5037 /* Assets.xcassets */; };
+		463852AD224B779D007C5037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463852AB224B779D007C5037 /* LaunchScreen.storyboard */; };
+		463852B0224B779D007C5037 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 463852AF224B779D007C5037 /* main.m */; };
+		463852BA224B779D007C5037 /* vue3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 463852B9224B779D007C5037 /* vue3Tests.m */; };
+		463852C5224B779D007C5037 /* vue3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 463852C4224B779D007C5037 /* vue3UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		463852B6224B779D007C5037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46385295224B7792007C5037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4638529C224B7792007C5037;
+			remoteInfo = vue3;
+		};
+		463852C1224B779D007C5037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46385295224B7792007C5037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4638529C224B7792007C5037;
+			remoteInfo = vue3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4638529D224B7792007C5037 /* vue3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vue3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		463852A0224B7792007C5037 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		463852A1224B7792007C5037 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		463852A3224B7792007C5037 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		463852A4224B7792007C5037 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		463852A7224B7792007C5037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		463852A9224B779D007C5037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		463852AC224B779D007C5037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		463852AE224B779D007C5037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463852AF224B779D007C5037 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		463852B5224B779D007C5037 /* vue3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vue3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463852B9224B779D007C5037 /* vue3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vue3Tests.m; sourceTree = "<group>"; };
+		463852BB224B779D007C5037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463852C0224B779D007C5037 /* vue3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vue3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463852C4224B779D007C5037 /* vue3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vue3UITests.m; sourceTree = "<group>"; };
+		463852C6224B779D007C5037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4638529A224B7792007C5037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463852B2224B779D007C5037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463852BD224B779D007C5037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46385294224B7792007C5037 = {
+			isa = PBXGroup;
+			children = (
+				4638529F224B7792007C5037 /* vue3 */,
+				463852B8224B779D007C5037 /* vue3Tests */,
+				463852C3224B779D007C5037 /* vue3UITests */,
+				4638529E224B7792007C5037 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4638529E224B7792007C5037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4638529D224B7792007C5037 /* vue3.app */,
+				463852B5224B779D007C5037 /* vue3Tests.xctest */,
+				463852C0224B779D007C5037 /* vue3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4638529F224B7792007C5037 /* vue3 */ = {
+			isa = PBXGroup;
+			children = (
+				463852A0224B7792007C5037 /* AppDelegate.h */,
+				463852A1224B7792007C5037 /* AppDelegate.m */,
+				463852A3224B7792007C5037 /* ViewController.h */,
+				463852A4224B7792007C5037 /* ViewController.m */,
+				463852A6224B7792007C5037 /* Main.storyboard */,
+				463852A9224B779D007C5037 /* Assets.xcassets */,
+				463852AB224B779D007C5037 /* LaunchScreen.storyboard */,
+				463852AE224B779D007C5037 /* Info.plist */,
+				463852AF224B779D007C5037 /* main.m */,
+			);
+			path = vue3;
+			sourceTree = "<group>";
+		};
+		463852B8224B779D007C5037 /* vue3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				463852B9224B779D007C5037 /* vue3Tests.m */,
+				463852BB224B779D007C5037 /* Info.plist */,
+			);
+			path = vue3Tests;
+			sourceTree = "<group>";
+		};
+		463852C3224B779D007C5037 /* vue3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				463852C4224B779D007C5037 /* vue3UITests.m */,
+				463852C6224B779D007C5037 /* Info.plist */,
+			);
+			path = vue3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4638529C224B7792007C5037 /* vue3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463852C9224B779D007C5037 /* Build configuration list for PBXNativeTarget "vue3" */;
+			buildPhases = (
+				46385299224B7792007C5037 /* Sources */,
+				4638529A224B7792007C5037 /* Frameworks */,
+				4638529B224B7792007C5037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vue3;
+			productName = vue3;
+			productReference = 4638529D224B7792007C5037 /* vue3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		463852B4224B779D007C5037 /* vue3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463852CC224B779D007C5037 /* Build configuration list for PBXNativeTarget "vue3Tests" */;
+			buildPhases = (
+				463852B1224B779D007C5037 /* Sources */,
+				463852B2224B779D007C5037 /* Frameworks */,
+				463852B3224B779D007C5037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463852B7224B779D007C5037 /* PBXTargetDependency */,
+			);
+			name = vue3Tests;
+			productName = vue3Tests;
+			productReference = 463852B5224B779D007C5037 /* vue3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		463852BF224B779D007C5037 /* vue3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463852CF224B779D007C5037 /* Build configuration list for PBXNativeTarget "vue3UITests" */;
+			buildPhases = (
+				463852BC224B779D007C5037 /* Sources */,
+				463852BD224B779D007C5037 /* Frameworks */,
+				463852BE224B779D007C5037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463852C2224B779D007C5037 /* PBXTargetDependency */,
+			);
+			name = vue3UITests;
+			productName = vue3UITests;
+			productReference = 463852C0224B779D007C5037 /* vue3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46385295224B7792007C5037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Calvin Guillemet";
+				TargetAttributes = {
+					4638529C224B7792007C5037 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					463852B4224B779D007C5037 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4638529C224B7792007C5037;
+					};
+					463852BF224B779D007C5037 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4638529C224B7792007C5037;
+					};
+				};
+			};
+			buildConfigurationList = 46385298224B7792007C5037 /* Build configuration list for PBXProject "vue3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46385294224B7792007C5037;
+			productRefGroup = 4638529E224B7792007C5037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4638529C224B7792007C5037 /* vue3 */,
+				463852B4224B779D007C5037 /* vue3Tests */,
+				463852BF224B779D007C5037 /* vue3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4638529B224B7792007C5037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463852AD224B779D007C5037 /* LaunchScreen.storyboard in Resources */,
+				463852AA224B779D007C5037 /* Assets.xcassets in Resources */,
+				463852A8224B7792007C5037 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463852B3224B779D007C5037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463852BE224B779D007C5037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46385299224B7792007C5037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463852A5224B7792007C5037 /* ViewController.m in Sources */,
+				463852B0224B779D007C5037 /* main.m in Sources */,
+				463852A2224B7792007C5037 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463852B1224B779D007C5037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463852BA224B779D007C5037 /* vue3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463852BC224B779D007C5037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463852C5224B779D007C5037 /* vue3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		463852B7224B779D007C5037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4638529C224B7792007C5037 /* vue3 */;
+			targetProxy = 463852B6224B779D007C5037 /* PBXContainerItemProxy */;
+		};
+		463852C2224B779D007C5037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4638529C224B7792007C5037 /* vue3 */;
+			targetProxy = 463852C1224B779D007C5037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		463852A6224B7792007C5037 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463852A7224B7792007C5037 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		463852AB224B779D007C5037 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463852AC224B779D007C5037 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		463852C7224B779D007C5037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		463852C8224B779D007C5037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		463852CA224B779D007C5037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vue3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.vue3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		463852CB224B779D007C5037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vue3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.vue3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		463852CD224B779D007C5037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vue3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.vue3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vue3.app/vue3";
+			};
+			name = Debug;
+		};
+		463852CE224B779D007C5037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vue3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.vue3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vue3.app/vue3";
+			};
+			name = Release;
+		};
+		463852D0224B779D007C5037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vue3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.vue3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vue3;
+			};
+			name = Debug;
+		};
+		463852D1224B779D007C5037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vue3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.vue3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vue3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46385298224B7792007C5037 /* Build configuration list for PBXProject "vue3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463852C7224B779D007C5037 /* Debug */,
+				463852C8224B779D007C5037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463852C9224B779D007C5037 /* Build configuration list for PBXNativeTarget "vue3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463852CA224B779D007C5037 /* Debug */,
+				463852CB224B779D007C5037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463852CC224B779D007C5037 /* Build configuration list for PBXNativeTarget "vue3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463852CD224B779D007C5037 /* Debug */,
+				463852CE224B779D007C5037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463852CF224B779D007C5037 /* Build configuration list for PBXNativeTarget "vue3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463852D0224B779D007C5037 /* Debug */,
+				463852D1224B779D007C5037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46385295224B7792007C5037 /* Project object */;
+}
