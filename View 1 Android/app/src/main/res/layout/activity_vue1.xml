@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".vue1Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:text="Connection" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="Connection" />
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="Deconnection" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        tools:context=".vue1Activity" />
+</LinearLayout>
