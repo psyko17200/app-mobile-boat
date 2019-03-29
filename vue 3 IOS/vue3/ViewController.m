@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-@synthesize carte,end,clear;
+@synthesize carte,end,clear, vitesse, slider_vitesse;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,8 +55,7 @@
     
     MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
     annotationPoint.coordinate = touchMapCoordinate;
-    annotationPoint.subtitle=@"LABEL";
-    annotationPoint.title=@"Title";
+    annotationPoint.title=@"Vitesse du bateau";
 
     [self.carte addAnnotation:annotationPoint];
     lastAnnotation = annotationPoint;
@@ -102,17 +101,18 @@
     annView.canShowCallout = YES;
     annView.calloutOffset = CGPointMake(0, 0);
     annView.image=[UIImage imageNamed:@"pin"];
-    UILabel *subTitlelbl = [[UILabel alloc]init];
-    subTitlelbl.text = @"sri ganganagar this is my home twon.sri ganganagar this is my home twon.sri ganganagar this is my home twon.  ";
     
-    NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:subTitlelbl attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:150];
+    vitesse = [[UILabel alloc]init];
+    vitesse.text = [NSString stringWithFormat:@"%f", slider_vitesse.value];
     
-    NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:subTitlelbl attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
-    [subTitlelbl setNumberOfLines:0];
-    [subTitlelbl addConstraint:width];
-    [subTitlelbl addConstraint:height];
-    UIView = // add view + y mettre le lablel + le button
-    annView.detailCalloutAccessoryView = subTitlelbl;
+    slider_vitesse = [[UISlider alloc] init];
+    slider_vitesse.minimumValue = 0.0;
+    slider_vitesse.maximumValue = 60.0;
+    slider_vitesse.continuous = YES;
+    slider_vitesse.value = 25.0;
+    
+    annView.detailCalloutAccessoryView = vitesse;
+    annView.rightCalloutAccessoryView = slider_vitesse;
     
     
     return annView;

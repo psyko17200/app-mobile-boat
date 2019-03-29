@@ -20,5 +20,7 @@
 @property(nonatomic ,strong) MKMapView * carte;
 @property (strong, nonatomic) IBOutlet UIButton *end;
 @property (strong, nonatomic) IBOutlet UIButton *clear;
+@property (strong, nonatomic) IBOutlet UILabel *vitesse;
+@property (strong, nonatomic) IBOutlet UISlider *slider_vitesse;
 
 @end
