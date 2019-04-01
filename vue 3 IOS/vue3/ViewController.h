@@ -16,11 +16,13 @@
     IBOutlet MKMapView *carte;
     IBOutlet UIButton *end;
     IBOutlet UIButton *clear;
+    NSMutableArray *arrayAnnotation;
 }
 @property(nonatomic ,strong) MKMapView * carte;
 @property (strong, nonatomic) IBOutlet UIButton *end;
 @property (strong, nonatomic) IBOutlet UIButton *clear;
 @property (strong, nonatomic) IBOutlet UILabel *vitesse;
-@property (strong, nonatomic) IBOutlet UISlider *slider_vitesse;
-
+@property (strong, nonatomic) IBOutlet UITextField *vitesse_point;
+@property (strong, nonatomic) IBOutlet UIAlertController *alert;
+@property (strong, nonatomic) IBOutlet UIAlertAction *defaultAction;
 @end
