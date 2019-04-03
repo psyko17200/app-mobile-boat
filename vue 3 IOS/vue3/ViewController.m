@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     defaultVitesse = @"10";
-    // Do any additional setup after loading the view, typically from a nib.
+    
     self.carte.showsUserLocation=YES;
     self.carte.delegate=self;
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(48.8534,2.3488); // location
@@ -41,7 +41,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)handleMapFingerTap:(UIGestureRecognizer *)gestureRecognizer {
@@ -116,13 +115,12 @@
 }
 
 - (void)plotRouteOnMap: (CLLocationCoordinate2D )lastLocation atCurrent2DLocation: (CLLocationCoordinate2D )currentLocation {
-    //Plot Location route on Map
+    
     CLLocationCoordinate2D *plotLocation = malloc(sizeof(CLLocationCoordinate2D) * 2);
     plotLocation[0] = lastLocation;
     plotLocation[1] = currentLocation;
     MKPolyline *line = [MKPolyline polylineWithCoordinates:plotLocation count:2];
     [carte addOverlay:line];
-    //[carte setCenterCoordinate:plotLocation[0]];
 }
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id<MKOverlay>)overlay
@@ -194,7 +192,6 @@
     int crc = 0;
     int i;
     
-    // the first $ sign and the last two bytes of original CRC + the * sign
     for (i = 1; i < trame.length ; i ++) {
         crc ^= [trame characterAtIndex:i];
     }
@@ -205,7 +202,6 @@
         hex = [@"0" stringByAppendingString:hex];
     }
     hex = [@"*" stringByAppendingString:hex];
-    //NSLog(@"%@", hex);
     return hex;
 }
 
