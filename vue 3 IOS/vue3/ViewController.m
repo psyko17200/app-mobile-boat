@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    defaultVitesse = @"10";
     // Do any additional setup after loading the view, typically from a nib.
-    
     self.carte.showsUserLocation=YES;
     self.carte.delegate=self;
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(48.8534,2.3488); // location
@@ -73,17 +73,41 @@
     
     
     // Ajout de pop up + ajout dans l'array
-    alert = [UIAlertController alertControllerWithTitle:@"Erreur connection"                                                                         message:@"Entrées invalides ou serveur deconnecté"                                                                    preferredStyle:UIAlertControllerStyleAlert];
+    alert = [UIAlertController alertControllerWithTitle:@"WayPoint"                                                                         message:@"Veuillez entrer une vitesse"                                                                    preferredStyle:UIAlertControllerStyleAlert];
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"something"; // if needs
+        textField.placeholder = @"5.2"; // if needs
     }];
     defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault                                                                  handler:^(UIAlertAction * action) {
-        NSString *vit = alert.textFields[0].text;
         
-        [arrayAnnotation addObject:lat];
-        [arrayAnnotation addObject:longi];
-        [arrayAnnotation addObject:vit];
-        NSLog(@"%@",arrayAnnotation);
+        NSDateFormatter *hourFormatter=[[NSDateFormatter alloc] init];
+        [hourFormatter setDateFormat:@"hhmmss.000"];
+        NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"ddMMyy"];
+        
+        NSString *vit = self->alert.textFields[0].text;
+        if([vit isEqualToString:@""]== true){
+            vit = self->defaultVitesse;
+        }
+        NSString *trame = @"$GPRMC,";
+        [self->arrayAnnotation addObject:lat];
+        [self->arrayAnnotation addObject:longi];
+        [self->arrayAnnotation addObject:vit];
+        NSLog(@"%@",self->arrayAnnotation);
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[hourFormatter stringFromDate:[NSDate date]]]];
+        trame = [trame stringByAppendingString:@"A,"]; //
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[self convertir:lat]]];
+        trame = [trame stringByAppendingString:[self convertir:lat]<0 ? @"S," : @"N," ]; // + Nord, - Sud
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[self convertir:longi]]];
+        trame = [trame stringByAppendingString:[self convertir:lat]<0 ? @"O," : @"E," ]; // + Est , - Ouest
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",vit]]; //
+        trame = [trame stringByAppendingString:@"degrees,"]; // A faire
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[dateFormatter stringFromDate:[NSDate date]]]];
+        trame = [trame stringByAppendingString:@","];
+        trame = [trame stringByAppendingString:@","];
+        trame = [trame stringByAppendingString:@"A"];
+        trame = [trame stringByAppendingString:[self cheksum:trame]];
+        NSLog(@"%@", trame);
+        
     }];
     
     
@@ -113,21 +137,79 @@
     }
     return nil;
 }
+-(IBAction)clear:(id)sender{
+    [carte removeAnnotations:carte.annotations];
+    [carte removeOverlays:carte.overlays];
+    lastLocation = kCLLocationCoordinate2DInvalid;
+    [arrayAnnotation removeAllObjects];
+}
 
-/*- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+-(IBAction)send:(id)sender{
+    NSLog(@"salut");
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
-    MKAnnotationView *annView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Boatpin"];
-    annView.canShowCallout = YES;
-    annView.calloutOffset = CGPointMake(0, 0);
-    annView.image=[UIImage imageNamed:@"pin"];
+    alert = [UIAlertController alertControllerWithTitle:@"WayPoint"                                                                         message:@"Veuillez entrer une vitesse"                                                                    preferredStyle:UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"5.2"; // if needs
+    }];
+    defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault                                                                  handler:^(UIAlertAction * action) {
+        NSString *vit = self->alert.textFields[0].text;
+        MKPointAnnotation *annotationPoint = (MKPointAnnotation*)view;
+        NSNumber *lat = [NSNumber numberWithDouble:annotationPoint.coordinate.latitude];
+        NSNumber *longi = [NSNumber numberWithDouble:annotationPoint.coordinate.longitude];
+        NSUInteger indexlat = [self->arrayAnnotation indexOfObject:lat];
+        NSUInteger indexlong = [self->arrayAnnotation indexOfObject:longi];
+        if([vit isEqualToString:@""]== true){
+            vit = [self->arrayAnnotation objectAtIndex:indexlong+1];
+        }
+        if(indexlat == indexlong-1){
+            [self->arrayAnnotation replaceObjectAtIndex:indexlong+1 withObject:vit];
+        }
+    }];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
     
-    vitesse_point = [[UITextField alloc] init];
+}
 
-    annView.detailCalloutAccessoryView = vitesse_point;
+- (NSString*)convertir:(NSNumber *) gpscond{
+    NSNumber *coor = gpscond;
+    NSString *stringCoor = [NSString stringWithFormat:@"%@",coor];
+    NSString *degree = [stringCoor componentsSeparatedByString:@"."][0];
+    NSString *minute = [stringCoor componentsSeparatedByString:@"."][1];
+    minute = [@"0." stringByAppendingString:minute];
+    double valueminute = [minute doubleValue] * 60;
+    minute = [[NSString alloc] initWithFormat: @"%f",valueminute ];
+    NSString *minutehead = [minute componentsSeparatedByString:@"."][0];
+    NSString *minutebody = [minute componentsSeparatedByString:@"."][1];
+    minutebody = [minutebody substringToIndex:4];
+    degree = [degree stringByAppendingString:minutehead];
+    degree = [degree stringByAppendingString:@"."];
+    degree = [degree stringByAppendingString:minutebody];
     
-    [arrayAnnotation addObject:annView];
+    return degree;
+}
+- (NSString*)cheksum:(NSString *) trame{
+    int crc = 0;
+    int i;
     
-    return annView;
-}*/
+    // the first $ sign and the last two bytes of original CRC + the * sign
+    for (i = 1; i < trame.length ; i ++) {
+        crc ^= [trame characterAtIndex:i];
+    }
+    NSLog(@"%d", crc);
+    NSString *crc2 = [NSString stringWithFormat:@"00%d",crc];
+    NSString *hex = [NSString stringWithFormat:@"%lX", (unsigned long)[crc2 integerValue]];
+    if(hex.length == 1){
+        hex = [@"0" stringByAppendingString:hex];
+    }
+    hex = [@"*" stringByAppendingString:hex];
+    //NSLog(@"%@", hex);
+    return hex;
+}
+
+
+
 
 @end
