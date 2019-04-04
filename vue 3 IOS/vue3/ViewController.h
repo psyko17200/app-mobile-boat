@@ -18,6 +18,7 @@
     IBOutlet UIButton *end;
     IBOutlet UIButton *clear;
     NSMutableArray *arrayAnnotation;
+    NSMutableArray *arrayTrame;
     NSString *defaultVitesse;
 }
 @property(nonatomic ,strong) MKMapView * carte;

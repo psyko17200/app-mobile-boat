@@ -18,14 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     defaultVitesse = @"10";
-    
+    // Do any additional setup after loading the view, typically from a nib.
     self.carte.showsUserLocation=YES;
     self.carte.delegate=self;
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(48.8534,2.3488); // location
     MKCoordinateSpan span = MKCoordinateSpanMake(0.0005, 0.0005); // zoom
     MKCoordinateRegion region = MKCoordinateRegionMake(location,span);  // charge la location et le zoom
     [carte setRegion: region animated:YES]; // affiche
-    
     
     UITapGestureRecognizer *fingerTap = [[UITapGestureRecognizer alloc]
                                          initWithTarget:self action:@selector(handleMapFingerTap:)];
@@ -41,7 +40,9 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
+
 
 - (void)handleMapFingerTap:(UIGestureRecognizer *)gestureRecognizer {
     
@@ -58,10 +59,7 @@
     annotationPoint.title=@"Vitesse du bateau";
     [self.carte addAnnotation:annotationPoint];
     lastAnnotation = annotationPoint;
-    
-    NSLog(@"Latitude %f",annotationPoint.coordinate.latitude);
-    NSLog(@"longitude %f",annotationPoint.coordinate.longitude);
-    
+
     if (CLLocationCoordinate2DIsValid(lastLocation) ) {
         [self plotRouteOnMap:lastLocation atCurrent2DLocation:annotationPoint.coordinate];
     }
@@ -72,41 +70,20 @@
     
     
     // Ajout de pop up + ajout dans l'array
-    alert = [UIAlertController alertControllerWithTitle:@"WayPoint"                                                                         message:@"Veuillez entrer une vitesse"                                                                    preferredStyle:UIAlertControllerStyleAlert];
+    alert = [UIAlertController alertControllerWithTitle:@"WayPoint" message:@"Veuillez entrer une vitesse"                                                                    preferredStyle:UIAlertControllerStyleAlert];
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"5.2"; // if needs
     }];
-    defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault                                                                  handler:^(UIAlertAction * action) {
-        
-        NSDateFormatter *hourFormatter=[[NSDateFormatter alloc] init];
-        [hourFormatter setDateFormat:@"hhmmss.000"];
-        NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"ddMMyy"];
-        
+    defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         NSString *vit = self->alert.textFields[0].text;
         if([vit isEqualToString:@""]== true){
             vit = self->defaultVitesse;
         }
-        NSString *trame = @"$GPRMC,";
+        
         [self->arrayAnnotation addObject:lat];
         [self->arrayAnnotation addObject:longi];
         [self->arrayAnnotation addObject:vit];
-        NSLog(@"%@",self->arrayAnnotation);
-        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[hourFormatter stringFromDate:[NSDate date]]]];
-        trame = [trame stringByAppendingString:@"A,"]; //
-        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[self convertir:lat]]];
-        trame = [trame stringByAppendingString:[self convertir:lat]<0 ? @"S," : @"N," ]; // + Nord, - Sud
-        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[self convertir:longi]]];
-        trame = [trame stringByAppendingString:[self convertir:lat]<0 ? @"O," : @"E," ]; // + Est , - Ouest
-        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",vit]]; //
-        trame = [trame stringByAppendingString:@"degrees,"]; // A faire
-        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[dateFormatter stringFromDate:[NSDate date]]]];
-        trame = [trame stringByAppendingString:@","];
-        trame = [trame stringByAppendingString:@","];
-        trame = [trame stringByAppendingString:@"A"];
-        trame = [trame stringByAppendingString:[self cheksum:trame]];
-        NSLog(@"%@", trame);
-        
+        //NSLog(@"%@",self->arrayAnnotation);
     }];
     
     
@@ -115,7 +92,6 @@
 }
 
 - (void)plotRouteOnMap: (CLLocationCoordinate2D )lastLocation atCurrent2DLocation: (CLLocationCoordinate2D )currentLocation {
-    
     CLLocationCoordinate2D *plotLocation = malloc(sizeof(CLLocationCoordinate2D) * 2);
     plotLocation[0] = lastLocation;
     plotLocation[1] = currentLocation;
@@ -144,15 +120,47 @@
 
 -(IBAction)send:(id)sender{
     NSLog(@"salut");
+    arrayTrame= [[NSMutableArray alloc] init];
+    NSDateFormatter *hourFormatter=[[NSDateFormatter alloc] init];
+    [hourFormatter setDateFormat:@"hhmmss.000"];
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"ddMMyy"];
+    
+    for(int i=0;i<arrayAnnotation.count;i=i+3){
+        NSNumber *lat = [NSNumber numberWithDouble:[[arrayAnnotation objectAtIndex:i] doubleValue]];
+        NSNumber *longi = [NSNumber numberWithDouble:[[arrayAnnotation objectAtIndex:i+1] doubleValue]];
+        NSString *vit = [arrayAnnotation objectAtIndex:i+2];
+        double deg = 0;
+        if(i>0){
+            deg = atan2([longi doubleValue] - [[arrayAnnotation objectAtIndex:i-2] doubleValue], [lat doubleValue] - [[arrayAnnotation objectAtIndex:i-3] doubleValue])*180/M_PI;
+        }
+        NSString *trame = @"$GPRMC,";
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[hourFormatter stringFromDate:[NSDate date]]]];
+        trame = [trame stringByAppendingString:@"A,"]; //
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[self convertir:lat]]];
+        trame = [trame stringByAppendingString:[self convertir:lat]<0 ? @"S," : @"N," ]; // + Nord, - Sud
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[self convertir:longi]]];
+        trame = [trame stringByAppendingString:[self convertir:lat]<0 ? @"O," : @"E," ]; // + Est , - Ouest
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",vit]]; //
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%f,",deg]]; // A faire
+        trame = [trame stringByAppendingString:[NSString stringWithFormat:@"%@,",[dateFormatter stringFromDate:[NSDate date]]]];
+        trame = [trame stringByAppendingString:@","];
+        trame = [trame stringByAppendingString:@","];
+        trame = [trame stringByAppendingString:@"A"];
+        trame = [trame stringByAppendingString:[self cheksum:trame]];
+        [arrayTrame addObject:trame];
+        
+    }
+    //NSLog(@"%@", arrayTrame);
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
-    alert = [UIAlertController alertControllerWithTitle:@"WayPoint"                                                                         message:@"Veuillez entrer une vitesse"                                                                    preferredStyle:UIAlertControllerStyleAlert];
+    alert = [UIAlertController alertControllerWithTitle:@"WayPoint" message:@"Veuillez entrer une vitesse" preferredStyle:UIAlertControllerStyleAlert];
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"5.2"; // if needs
     }];
-    defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault                                                                  handler:^(UIAlertAction * action) {
+    defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         NSString *vit = self->alert.textFields[0].text;
         MKPointAnnotation *annotationPoint = (MKPointAnnotation*)view;
         NSNumber *lat = [NSNumber numberWithDouble:annotationPoint.coordinate.latitude];
@@ -195,17 +203,15 @@
     for (i = 1; i < trame.length ; i ++) {
         crc ^= [trame characterAtIndex:i];
     }
-    NSLog(@"%d", crc);
     NSString *crc2 = [NSString stringWithFormat:@"00%d",crc];
     NSString *hex = [NSString stringWithFormat:@"%lX", (unsigned long)[crc2 integerValue]];
     if(hex.length == 1){
         hex = [@"0" stringByAppendingString:hex];
     }
     hex = [@"*" stringByAppendingString:hex];
+    ;
     return hex;
 }
-
-
 
 
 @end
