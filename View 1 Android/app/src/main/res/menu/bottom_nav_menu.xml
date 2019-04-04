@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/acceuil"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_acceuil"
+        android:title="Acceuil"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/act1"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_vue1"
+        android:title="Vue_1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/act2"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_vue2"
+        android:title="Vue_2"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_act3"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_vue3"
+        android:title="Vue_3"
+        app:showAsAction="ifRoom" />
+</menu>

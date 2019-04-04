@@ -1,8 +1,12 @@
 package com.example.drone;
 
 import android.app.Activity;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,31 +18,55 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.Socket;
 
 public class vue1Activity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-    private simulateur s;
-    private EditText ip;
-    private EditText port;
+    protected GoogleMap mMap;
+    protected simulateur s;
+    protected TextView info;
+    protected EditText ip;
+    protected EditText port;
+    protected Button connect;
+    protected Button disconnect;
+    protected SupportMapFragment mapFragment;
+    protected BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue1);
         this.ip=findViewById(R.id.ip);
+        ip.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
         this.port=findViewById(R.id.port);
-
-        Button connect=findViewById(R.id.connect);
-        Button disconnect=findViewById(R.id.disconnect);
-
+        port.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
+        this.connect=findViewById(R.id.connect);
+        this.disconnect =findViewById(R.id.disconnect);
+        this.info=findViewById(R.id.info);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        this.mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        connect.setOnClickListener(new View.OnClickListener(){
+        this.findViewById(R.id.tracer).setVisibility(View.GONE);
+
+        this.disconnect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                s.returnMenu();
+            }
+        });
+
+        this.connect.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 if(ip!=null && port!=null) {
@@ -71,4 +99,19 @@ public class vue1Activity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
+    public EditText getIp() {
+        return ip;
+    }
+
+    public EditText getPort() {
+        return port;
+    }
+
+    public Button getConnect() {
+        return connect;
+    }
+
+    public SupportMapFragment getMapFragment() {
+        return mapFragment;
+    }
 }

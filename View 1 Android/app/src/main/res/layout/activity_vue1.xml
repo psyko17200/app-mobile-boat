@@ -1,53 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
+    android:gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
     tools:context=".vue1Activity">
 
-    <TextView
-        android:id="@+id/textView"
+    <RelativeLayout
+        android:id="@+id/tracer"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:gravity="center_horizontal"
-        android:text="Connection" />
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/ip"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/port"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".vue1Activity" />
 
-    <Button
-        android:id="@+id/connect"
-        android:layout_width="205dp"
-        android:layout_height="wrap_content"
-        android:text="Connection" />
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/colorText" />
 
-    <Button
-        android:id="@+id/disconnect"
-        android:layout_width="205dp"
-        android:layout_height="wrap_content"
-        android:text="Deconnection" />
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="39dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_icon" />
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    </RelativeLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="294dp"
-        tools:context=".vue1Activity" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_horizontal"
+            android:text="Connection" />
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_round"
+            android:ems="10"
+            android:hint="ip de connexion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_round"
+            android:ems="10"
+            android:hint="port de connexion"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Connection"
+            android:textColor="#001AFF" />
+    </LinearLayout>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/bottom_nav_menu">
+        </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>
