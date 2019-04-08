@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MapKit/MKAnnotation.h>
+
 @interface ViewController ()
 
 @end
@@ -35,6 +36,8 @@
     arrayAnnotation= [[NSMutableArray alloc] init];
     lastLocation = kCLLocationCoordinate2DInvalid;
     lastAnnotation = nil;
+    
+    NSLog(@"directory %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
 }
 
 
@@ -119,13 +122,12 @@
 }
 
 -(IBAction)send:(id)sender{
-    NSLog(@"salut");
     arrayTrame= [[NSMutableArray alloc] init];
     NSDateFormatter *hourFormatter=[[NSDateFormatter alloc] init];
     [hourFormatter setDateFormat:@"hhmmss.000"];
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"ddMMyy"];
-    
+    NSString *totalTrame =@"";
     for(int i=0;i<arrayAnnotation.count;i=i+3){
         NSNumber *lat = [NSNumber numberWithDouble:[[arrayAnnotation objectAtIndex:i] doubleValue]];
         NSNumber *longi = [NSNumber numberWithDouble:[[arrayAnnotation objectAtIndex:i+1] doubleValue]];
@@ -150,8 +152,26 @@
         trame = [trame stringByAppendingString:[self cheksum:trame]];
         [arrayTrame addObject:trame];
         
+        totalTrame = [totalTrame stringByAppendingString:[trame stringByAppendingString:@"\n"]];
     }
-    //NSLog(@"%@", arrayTrame);
+    NSLog(@"trame1 : %@",totalTrame);
+    [self writeToTextFile:totalTrame];
+}
+-(void) writeToTextFile:(NSString *)trame{
+    NSLog(@"trame : %@",trame);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/nmealog.txt",documentsDirectory];
+    [trame writeToFile:fileName atomically:NO encoding:NSStringEncodingConversionAllowLossy error:nil];
+    
+    UIDocumentInteractionController *documentInteractionController =[UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:fileName]];
+    documentInteractionController.delegate = self;
+    [documentInteractionController presentPreviewAnimated:YES];
+    
+}
+- (UIViewController *) documentInteractionControllerViewControllerForPreview: (UIDocumentInteractionController *) controller {
+    return self;
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
