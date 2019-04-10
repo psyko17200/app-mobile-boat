@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0F26A6225E22CD008A7BC3 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 3E0F26A5225E22CD008A7BC3 /* images */; };
+		3E4086932256951000EE23BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4086922256951000EE23BC /* AppDelegate.m */; };
+		3E4086962256951000EE23BC /* Visualisation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4086952256951000EE23BC /* Visualisation.m */; };
+		3E4086992256951000EE23BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4086972256951000EE23BC /* Main.storyboard */; };
+		3E40869B2256951900EE23BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E40869A2256951800EE23BC /* Assets.xcassets */; };
+		3E40869E2256951900EE23BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E40869C2256951900EE23BC /* LaunchScreen.storyboard */; };
+		3E4086A12256951A00EE23BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4086A02256951A00EE23BC /* main.m */; };
+		3E4086AB2256951B00EE23BC /* Pocket_droneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4086AA2256951B00EE23BC /* Pocket_droneTests.m */; };
+		3E4086B62256951C00EE23BC /* Pocket_droneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4086B52256951C00EE23BC /* Pocket_droneUITests.m */; };
+		4668A582225B3E4300ADC81E /* Trace.m in Sources */ = {isa = PBXBuildFile; fileRef = 4668A581225B3E4300ADC81E /* Trace.m */; };
+		4668A585225B40E500ADC81E /* tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4668A584225B40E500ADC81E /* tabBar.m */; };
+		7F0163DB2259357E0028CB7E /* Pilotage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0163DA2259357E0028CB7E /* Pilotage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E4086A72256951A00EE23BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E4086862256950F00EE23BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E40868D2256950F00EE23BC;
+			remoteInfo = "Pocket drone";
+		};
+		3E4086B22256951B00EE23BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E4086862256950F00EE23BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E40868D2256950F00EE23BC;
+			remoteInfo = "Pocket drone";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E0F26A5225E22CD008A7BC3 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		3E40868E2256950F00EE23BC /* Pocket drone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket drone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4086912256951000EE23BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E4086922256951000EE23BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E4086942256951000EE23BC /* Visualisation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visualisation.h; sourceTree = "<group>"; };
+		3E4086952256951000EE23BC /* Visualisation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visualisation.m; sourceTree = "<group>"; };
+		3E4086982256951000EE23BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E40869A2256951800EE23BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E40869D2256951900EE23BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E40869F2256951A00EE23BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4086A02256951A00EE23BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E4086A62256951A00EE23BC /* Pocket droneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket droneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4086AA2256951B00EE23BC /* Pocket_droneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_droneTests.m; sourceTree = "<group>"; };
+		3E4086AC2256951B00EE23BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4086B12256951B00EE23BC /* Pocket droneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket droneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4086B52256951C00EE23BC /* Pocket_droneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_droneUITests.m; sourceTree = "<group>"; };
+		3E4086B72256951C00EE23BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4668A580225B3E4300ADC81E /* Trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trace.h; sourceTree = "<group>"; };
+		4668A581225B3E4300ADC81E /* Trace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trace.m; sourceTree = "<group>"; };
+		4668A583225B40E500ADC81E /* tabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabBar.h; sourceTree = "<group>"; };
+		4668A584225B40E500ADC81E /* tabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabBar.m; sourceTree = "<group>"; };
+		7F0163D92259357E0028CB7E /* Pilotage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pilotage.h; sourceTree = "<group>"; };
+		7F0163DA2259357E0028CB7E /* Pilotage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pilotage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E40868B2256950F00EE23BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4086A32256951A00EE23BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4086AE2256951B00EE23BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E4086852256950E00EE23BC = {
+			isa = PBXGroup;
+			children = (
+				3E4086902256950F00EE23BC /* Pocket drone */,
+				3E4086A92256951A00EE23BC /* Pocket droneTests */,
+				3E4086B42256951B00EE23BC /* Pocket droneUITests */,
+				3E40868F2256950F00EE23BC /* Products */,
+				3E0F26A5225E22CD008A7BC3 /* images */,
+			);
+			sourceTree = "<group>";
+		};
+		3E40868F2256950F00EE23BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E40868E2256950F00EE23BC /* Pocket drone.app */,
+				3E4086A62256951A00EE23BC /* Pocket droneTests.xctest */,
+				3E4086B12256951B00EE23BC /* Pocket droneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E4086902256950F00EE23BC /* Pocket drone */ = {
+			isa = PBXGroup;
+			children = (
+				3E4086912256951000EE23BC /* AppDelegate.h */,
+				3E4086922256951000EE23BC /* AppDelegate.m */,
+				3E4086942256951000EE23BC /* Visualisation.h */,
+				3E4086952256951000EE23BC /* Visualisation.m */,
+				3E4086972256951000EE23BC /* Main.storyboard */,
+				4668A583225B40E500ADC81E /* tabBar.h */,
+				4668A584225B40E500ADC81E /* tabBar.m */,
+				4668A580225B3E4300ADC81E /* Trace.h */,
+				4668A581225B3E4300ADC81E /* Trace.m */,
+				7F0163D92259357E0028CB7E /* Pilotage.h */,
+				7F0163DA2259357E0028CB7E /* Pilotage.m */,
+				3E40869A2256951800EE23BC /* Assets.xcassets */,
+				3E40869C2256951900EE23BC /* LaunchScreen.storyboard */,
+				3E40869F2256951A00EE23BC /* Info.plist */,
+				3E4086A02256951A00EE23BC /* main.m */,
+			);
+			path = "Pocket drone";
+			sourceTree = "<group>";
+		};
+		3E4086A92256951A00EE23BC /* Pocket droneTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E4086AA2256951B00EE23BC /* Pocket_droneTests.m */,
+				3E4086AC2256951B00EE23BC /* Info.plist */,
+			);
+			path = "Pocket droneTests";
+			sourceTree = "<group>";
+		};
+		3E4086B42256951B00EE23BC /* Pocket droneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E4086B52256951C00EE23BC /* Pocket_droneUITests.m */,
+				3E4086B72256951C00EE23BC /* Info.plist */,
+			);
+			path = "Pocket droneUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E40868D2256950F00EE23BC /* Pocket drone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4086BA2256951D00EE23BC /* Build configuration list for PBXNativeTarget "Pocket drone" */;
+			buildPhases = (
+				3E40868A2256950F00EE23BC /* Sources */,
+				3E40868B2256950F00EE23BC /* Frameworks */,
+				3E40868C2256950F00EE23BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pocket drone";
+			productName = "Pocket drone";
+			productReference = 3E40868E2256950F00EE23BC /* Pocket drone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E4086A52256951A00EE23BC /* Pocket droneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4086BD2256951D00EE23BC /* Build configuration list for PBXNativeTarget "Pocket droneTests" */;
+			buildPhases = (
+				3E4086A22256951A00EE23BC /* Sources */,
+				3E4086A32256951A00EE23BC /* Frameworks */,
+				3E4086A42256951A00EE23BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E4086A82256951A00EE23BC /* PBXTargetDependency */,
+			);
+			name = "Pocket droneTests";
+			productName = "Pocket droneTests";
+			productReference = 3E4086A62256951A00EE23BC /* Pocket droneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E4086B02256951B00EE23BC /* Pocket droneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4086C02256951D00EE23BC /* Build configuration list for PBXNativeTarget "Pocket droneUITests" */;
+			buildPhases = (
+				3E4086AD2256951B00EE23BC /* Sources */,
+				3E4086AE2256951B00EE23BC /* Frameworks */,
+				3E4086AF2256951B00EE23BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E4086B32256951B00EE23BC /* PBXTargetDependency */,
+			);
+			name = "Pocket droneUITests";
+			productName = "Pocket droneUITests";
+			productReference = 3E4086B12256951B00EE23BC /* Pocket droneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E4086862256950F00EE23BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "calvin ";
+				TargetAttributes = {
+					3E40868D2256950F00EE23BC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3E4086A52256951A00EE23BC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E40868D2256950F00EE23BC;
+					};
+					3E4086B02256951B00EE23BC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E40868D2256950F00EE23BC;
+					};
+				};
+			};
+			buildConfigurationList = 3E4086892256950F00EE23BC /* Build configuration list for PBXProject "Pocket drone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E4086852256950E00EE23BC;
+			productRefGroup = 3E40868F2256950F00EE23BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E40868D2256950F00EE23BC /* Pocket drone */,
+				3E4086A52256951A00EE23BC /* Pocket droneTests */,
+				3E4086B02256951B00EE23BC /* Pocket droneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E40868C2256950F00EE23BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E40869E2256951900EE23BC /* LaunchScreen.storyboard in Resources */,
+				3E40869B2256951900EE23BC /* Assets.xcassets in Resources */,
+				3E4086992256951000EE23BC /* Main.storyboard in Resources */,
+				3E0F26A6225E22CD008A7BC3 /* images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4086A42256951A00EE23BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4086AF2256951B00EE23BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E40868A2256950F00EE23BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F0163DB2259357E0028CB7E /* Pilotage.m in Sources */,
+				3E4086962256951000EE23BC /* Visualisation.m in Sources */,
+				4668A582225B3E4300ADC81E /* Trace.m in Sources */,
+				3E4086A12256951A00EE23BC /* main.m in Sources */,
+				3E4086932256951000EE23BC /* AppDelegate.m in Sources */,
+				4668A585225B40E500ADC81E /* tabBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4086A22256951A00EE23BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4086AB2256951B00EE23BC /* Pocket_droneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4086AD2256951B00EE23BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4086B62256951C00EE23BC /* Pocket_droneUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E4086A82256951A00EE23BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E40868D2256950F00EE23BC /* Pocket drone */;
+			targetProxy = 3E4086A72256951A00EE23BC /* PBXContainerItemProxy */;
+		};
+		3E4086B32256951B00EE23BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E40868D2256950F00EE23BC /* Pocket drone */;
+			targetProxy = 3E4086B22256951B00EE23BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E4086972256951000EE23BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E4086982256951000EE23BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E40869C2256951900EE23BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E40869D2256951900EE23BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E4086B82256951D00EE23BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E4086B92256951D00EE23BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E4086BB2256951D00EE23BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G5985V3GL;
+				INFOPLIST_FILE = "Pocket drone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ff.Pocket-drone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E4086BC2256951D00EE23BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G5985V3GL;
+				INFOPLIST_FILE = "Pocket drone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "ff.Pocket-drone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E4086BE2256951D00EE23BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pocket droneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Groupe-B.Pocket-droneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocket drone.app/Pocket drone";
+			};
+			name = Debug;
+		};
+		3E4086BF2256951D00EE23BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pocket droneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Groupe-B.Pocket-droneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocket drone.app/Pocket drone";
+			};
+			name = Release;
+		};
+		3E4086C12256951D00EE23BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pocket droneUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Groupe-B.Pocket-droneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pocket drone";
+			};
+			name = Debug;
+		};
+		3E4086C22256951D00EE23BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Pocket droneUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Groupe-B.Pocket-droneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pocket drone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E4086892256950F00EE23BC /* Build configuration list for PBXProject "Pocket drone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4086B82256951D00EE23BC /* Debug */,
+				3E4086B92256951D00EE23BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E4086BA2256951D00EE23BC /* Build configuration list for PBXNativeTarget "Pocket drone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4086BB2256951D00EE23BC /* Debug */,
+				3E4086BC2256951D00EE23BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E4086BD2256951D00EE23BC /* Build configuration list for PBXNativeTarget "Pocket droneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4086BE2256951D00EE23BC /* Debug */,
+				3E4086BF2256951D00EE23BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E4086C02256951D00EE23BC /* Build configuration list for PBXNativeTarget "Pocket droneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4086C12256951D00EE23BC /* Debug */,
+				3E4086C22256951D00EE23BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E4086862256950F00EE23BC /* Project object */;
+}
