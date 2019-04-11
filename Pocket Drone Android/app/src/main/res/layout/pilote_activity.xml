@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vue2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp">
+
+    <RelativeLayout
+        android:id="@+id/pilotage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <Button
+            android:id="@+id/retour"
+            android:layout_width="37dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_icon" />
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#CBAF72"
+                android:onClick="start"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/color" />
+
+            <TextView
+                android:id="@+id/vitAff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#1E1E1E"
+                android:gravity="center"
+                android:text="Vitesse:    N\A    noeud(s)"
+                android:textColor="@color/color" />
+
+            <Button
+                android:id="@+id/Marche"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#CBAF72"
+                android:text="Démarer"
+                android:textAllCaps="false"
+                android:textColor="@color/color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fenetre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/begin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+
+            android:alpha="150"
+            android:background="@drawable/map7"
+            android:text="Cliquer pour piloter votre drone"
+            android:textAllCaps="false"
+            android:textColor="@color/color"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/nav_color_bar"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@drawable/nav_bar_item_checked_color"
+        app:itemTextColor="@drawable/nav_bar_item_checked_color"
+        app:menu="@menu/bottom_nav_menu"></android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

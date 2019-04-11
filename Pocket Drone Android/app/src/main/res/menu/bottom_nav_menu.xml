@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- <item
+        android:id="@+id/acceuil"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_acceuil"
+        android:title="Acceuil"
+        app:showAsAction="ifRoom" />
+    -->
+    <item
+        android:id="@+id/act1"
+        android:enabled="true"
+        android:icon="@drawable/visu"
+        android:title="Visualisation"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/act2"
+        android:enabled="true"
+        android:icon="@drawable/pilote"
+        android:title="Pilotage"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/act3"
+        android:enabled="true"
+        android:icon="@drawable/trace"
+        android:title="Itinéraire"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,286 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\addbc16285fde432474720bcf36c6ae8\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b4d0da8ab9e611dfc74e0aca96e1a59e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:17:1-38:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\042498b214fb54a38f91c6479a875f96\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\1f2429d88069aeb2bb770b9f5e186260\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3d877b2659aa251d008434468a4c7db6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\fa84892e22d642170641f3f78d7653cc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6abe743c88182cf7ce61f32336b303fb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1a4b7df68e2530795f40f8e7af47d75b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\fb16ad450681b307748a3fac0f9887da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\051957edb52c610db3eb24a1de971855\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\5de2f02f6a6d3fa4615045161e2a49fb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f399bebf5c6855d99f6b227b166293b2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\086eb594d065e83f61e66449e306d442\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\109cee34d64e04d4fe75ec38b60fdf4e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4d0f352c6c0095208f28cab82fd71602\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c1ad38f6d29eb95d115aef66335e6207\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\f7b7469c826481f4edde95209aa7aeb1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ea89559c023b30c8c311d7fa98a2a375\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\5ff72741d7da4a3247cb693db4f8306b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e193ff8a18296f239f522f32d6685fa5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d5dfedb22d798ca0b9ddfd1a4ef057c2\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\30792aed7215e55e1505c4818c7caa26\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\f79fd034d0b7a9c73f39cdb347252f6d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\696afe306ccbdaa0a66d76d4b851a2e0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\34d4e05e8d084a20aec0e5e19838ba97\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\ee7f44241dccb44cfaa9aa322fa79125\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\0bd74e4c38e67a24ee0fc127913c01bd\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\30f45d4b78ba36bce286157c1099ac84\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\dfcb30b4abba818790a26a77c0bf6215\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\7f62cdfff8729907afc422fab4e30aef\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e20ee59cd821531eef42db5a1e0bd844\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2daaf963c237381217d9f09fadfce78b\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+	package
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:1-55:12
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:12:5-78
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.WRITE
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:13:5-64
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:13:22-61
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:14:22-78
+application
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:16:5-53:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\addbc16285fde432474720bcf36c6ae8\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\addbc16285fde432474720bcf36c6ae8\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:30:5-36:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\042498b214fb54a38f91c6479a875f96\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\042498b214fb54a38f91c6479a875f96\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\1f2429d88069aeb2bb770b9f5e186260\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\1f2429d88069aeb2bb770b9f5e186260\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e193ff8a18296f239f522f32d6685fa5\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e193ff8a18296f239f522f32d6685fa5\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d5dfedb22d798ca0b9ddfd1a4ef057c2\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d5dfedb22d798ca0b9ddfd1a4ef057c2\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e193ff8a18296f239f522f32d6685fa5\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:19:9-37
+	android:roundIcon
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:20:9-54
+	android:icon
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:22:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:31:9-33:55
+	android:value
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:33:13-52
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:32:13-58
+activity#com.example.drone.visualisationActivity
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:34:9-44:20
+	android:screenOrientation
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:38:13-49
+	android:label
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:36:13-41
+	android:theme
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:37:13-47
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:35:13-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:39:13-43:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:42:27-74
+activity#com.example.drone.itineraireActivity
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:45:9-48:61
+	android:screenOrientation
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:48:13-49
+	android:label
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:47:13-33
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:46:13-47
+activity#com.example.drone.piloteActivity
+ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:49:9-52:61
+	android:screenOrientation
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:52:13-49
+	android:label
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:51:13-33
+	android:name
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml:50:13-43
+uses-sdk
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\addbc16285fde432474720bcf36c6ae8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\addbc16285fde432474720bcf36c6ae8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b4d0da8ab9e611dfc74e0aca96e1a59e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b4d0da8ab9e611dfc74e0aca96e1a59e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\042498b214fb54a38f91c6479a875f96\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\042498b214fb54a38f91c6479a875f96\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\1f2429d88069aeb2bb770b9f5e186260\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\1f2429d88069aeb2bb770b9f5e186260\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3d877b2659aa251d008434468a4c7db6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3d877b2659aa251d008434468a4c7db6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\fa84892e22d642170641f3f78d7653cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\fa84892e22d642170641f3f78d7653cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6abe743c88182cf7ce61f32336b303fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6abe743c88182cf7ce61f32336b303fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1a4b7df68e2530795f40f8e7af47d75b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1a4b7df68e2530795f40f8e7af47d75b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\fb16ad450681b307748a3fac0f9887da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\fb16ad450681b307748a3fac0f9887da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\051957edb52c610db3eb24a1de971855\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\051957edb52c610db3eb24a1de971855\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\5de2f02f6a6d3fa4615045161e2a49fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\5de2f02f6a6d3fa4615045161e2a49fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f399bebf5c6855d99f6b227b166293b2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\f399bebf5c6855d99f6b227b166293b2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\086eb594d065e83f61e66449e306d442\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\086eb594d065e83f61e66449e306d442\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\109cee34d64e04d4fe75ec38b60fdf4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\109cee34d64e04d4fe75ec38b60fdf4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4d0f352c6c0095208f28cab82fd71602\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\4d0f352c6c0095208f28cab82fd71602\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c1ad38f6d29eb95d115aef66335e6207\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c1ad38f6d29eb95d115aef66335e6207\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\f7b7469c826481f4edde95209aa7aeb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\f7b7469c826481f4edde95209aa7aeb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ea89559c023b30c8c311d7fa98a2a375\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ea89559c023b30c8c311d7fa98a2a375\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\5ff72741d7da4a3247cb693db4f8306b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\5ff72741d7da4a3247cb693db4f8306b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e193ff8a18296f239f522f32d6685fa5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e193ff8a18296f239f522f32d6685fa5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d5dfedb22d798ca0b9ddfd1a4ef057c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d5dfedb22d798ca0b9ddfd1a4ef057c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\30792aed7215e55e1505c4818c7caa26\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\30792aed7215e55e1505c4818c7caa26\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\f79fd034d0b7a9c73f39cdb347252f6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\f79fd034d0b7a9c73f39cdb347252f6d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\696afe306ccbdaa0a66d76d4b851a2e0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\696afe306ccbdaa0a66d76d4b851a2e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\34d4e05e8d084a20aec0e5e19838ba97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\34d4e05e8d084a20aec0e5e19838ba97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\ee7f44241dccb44cfaa9aa322fa79125\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\ee7f44241dccb44cfaa9aa322fa79125\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\0bd74e4c38e67a24ee0fc127913c01bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\0bd74e4c38e67a24ee0fc127913c01bd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\30f45d4b78ba36bce286157c1099ac84\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\30f45d4b78ba36bce286157c1099ac84\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\dfcb30b4abba818790a26a77c0bf6215\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\dfcb30b4abba818790a26a77c0bf6215\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\7f62cdfff8729907afc422fab4e30aef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\7f62cdfff8729907afc422fab4e30aef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e20ee59cd821531eef42db5a1e0bd844\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e20ee59cd821531eef42db5a1e0bd844\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2daaf963c237381217d9f09fadfce78b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2daaf963c237381217d9f09fadfce78b\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\doryan\Desktop\projet\app-mobile-boat\View 1 Android\app\src\main\AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\10cc3ae3f1dc59cb2a7f9c95643c9c08\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\86fae12b10f7f94d78ccdc2c94cb1118\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\c9044cab405c79ea478e578a64cea622\AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\182acb5c86af3c2e1899fa1e9be06a58\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\doryan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1c053d402e6860014316ffa2e7d5b85d\AndroidManifest.xml:27:13-51
